@@ -1,0 +1,468 @@
+commit 196773314a9456bb8cab0c6cdbd56b466393ce15
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Fri Oct 12 14:57:20 2012 +0200
+
+    Release 0.8
+
+commit 532e447308a5fd5c7a280ff588e60ee22f020f7c
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Fri Oct 12 14:57:06 2012 +0200
+
+    Fix URL
+
+commit 0f65a6f0036e90074541619d33fb63bc1499da12
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Wed Jul 25 09:53:38 2012 +0200
+
+    Enable line ending normalization and nice diffs
+
+commit 21c94af7a41c90770e264b4e9f26dfe71bbd4677
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Fri Jul 20 18:47:12 2012 +0200
+
+    Fix test for PyPy
+
+commit 251509094adfb3e9d5c99f084992560102f54c4d
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Mon Jul 16 23:19:07 2012 +0200
+
+    Fix another test for Python 3.1
+
+commit a2106033416150228af8ec4eacab38e8827bf624
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Mon Jul 16 22:02:41 2012 +0200
+
+    Fix test for Python 3.1
+
+commit 5384a5866abdf46cf470d4a729147880c9a87146
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Tue Jul 10 19:44:13 2012 +0200
+
+    Fix standard error test
+    
+    Do not test against the Python version, because pypy adds build information to
+    the output of "python -V" and hence breaks this test. We now write a fixed
+    string to standard error with "python -c".
+
+commit 22a955b559487a0040f1a76ec57858870f81459b
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Tue Jul 10 19:38:14 2012 +0200
+
+    Add support and development docs
+
+commit f19ecf0806e0ce3b4466b634bbe9b67149a8af66
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Tue Jul 10 12:18:28 2012 +0200
+
+    Include travis status image in README
+
+commit e5d80684d488d392b549005b904d0c115770aa1a
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Tue Jul 10 12:14:38 2012 +0200
+
+    Use travis for testing
+
+commit 62488d1b017117cdde4334fd65f0782ca5a2caf7
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Tue Jul 10 12:01:30 2012 +0200
+
+    Update changelog
+    
+    Note github migration, and remove all references to issues on Bitbucket
+
+commit ed971ff267aa0d10ee57a1acbdc3ee2d82828e57
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Tue Jul 10 11:59:20 2012 +0200
+
+    Fix readme extraction in setup.py
+
+commit 24413dd4fb255d20e1b4a85cb76996e1ae87fb0f
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Tue Jul 10 11:59:09 2012 +0200
+
+    Add requirements file
+
+commit a2904d76aa8703a27e4e294ee7005d91451f27d3
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Tue Jul 10 11:58:54 2012 +0200
+
+    Update documentation
+
+commit 23b5188e6dc1efc2e29af7fd11ab1586c264d8b4
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Tue Jul 10 11:40:21 2012 +0200
+
+    Update readme
+    
+    Reference Github and readthedocs, add sections about usage, support and
+    development.
+
+commit 9fba87c184ca07d9d60e6a9ed74c7eae5d5bbd7c
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Tue Jul 10 11:39:51 2012 +0200
+
+    Add license file
+
+commit 6ddbf7a7b187eba416c2dc641b121b41166550c7
+Author: Sebastian Wiesner <lunaryorn@gmail.com>
+Date:   Thu Jun 28 17:13:38 2012 +0200
+
+    Update mail address
+
+commit a79f269b8912f7a558d969b0a40eaf6f39bcb0e6
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Thu Jun 28 12:58:12 2012 +0200
+
+    Remove all references to the sphinx-contrib repo
+
+commit 7a118cd497a5683aea4f9a43b0d4ab13c07238c4
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Thu Jun 28 12:53:40 2012 +0200
+
+    Git ignore list
+
+commit 2d818b7f93dab209191cfc056428eda01b1647b8
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Thu Jun 28 12:53:11 2012 +0200
+
+    Rename readme
+    
+    Github needs a proper file extension to render the README to HTML.
+
+commit 244f4f1cfb5808101abaa0d58fd4ce95881f9a4f
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Tue Apr 17 14:40:58 2012 +0200
+
+    Bump to programoutput 0.8
+
+commit d8f4acda8c9b55a2281a64eeae29a23a3850e251
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Tue Apr 17 14:36:53 2012 +0200
+
+    Release programoutput 0.7
+
+commit 3712e1c2849860aad08a42f246c14b52c98c0cec
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Tue Apr 17 14:36:40 2012 +0200
+
+    Bump version, 0.6 was already released
+
+commit 169e2e84686fd8a57f3a10339167e6691a53967d
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Tue Apr 17 14:31:11 2012 +0200
+
+    Updated readme
+
+commit ff1cb7e7a73fa23e057889e357cbc286e9cce642
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Tue Apr 17 14:29:37 2012 +0200
+
+    Updated trove classifiers
+
+commit cf2ac4c68ddfcf85aff906bf2f5bfe507b7cf9fb
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Tue Apr 17 12:03:41 2012 +0200
+
+    Fixed test for Python 3
+
+commit 517ab48e66ab7ebc9c876eef007e4a6d275cec40
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Tue Apr 17 11:56:14 2012 +0200
+
+    Fixed deps of doc env
+
+commit c06f71cb7ab43e6cf22dca84b4d48eb086126eb0
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Tue Apr 17 11:56:02 2012 +0200
+
+    Added tests for cwd option
+
+commit 3e3fa776b60e01e54e12e24d9b2665c0288d8c98
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Tue Apr 17 11:54:47 2012 +0200
+
+    Need to normalize working dir and resolve symlinks
+    
+    `chdir()` resolves links, so we need to do so to to not break cache keys
+
+commit 28151f75f73d5eee7bf26acb7829482c4e066911
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Mon Apr 16 10:44:46 2012 +0200
+
+    Added cwd option to set the working directory of commands, fixes #28
+    
+    Working directory now defaults to the top level source directory instead of the
+    working directory of the "sphinx-build" process.
+
+commit 4d2a096d4c2745431e290475fd6c1e457acae9a7
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Thu Apr 12 13:46:16 2012 +0200
+
+    Some slight cleanup
+
+commit 8fe4d4f4c4d77e3a1b4be0affd8f470954110668
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Thu Apr 12 13:43:13 2012 +0200
+
+    Support Python 3 without 2to3
+
+commit 4e258c2e0238bb66e3ccada271b1911aef7291f9
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Thu Apr 12 13:42:55 2012 +0200
+
+    Updated tox configuration, removed outdated test requirements
+
+commit d1a79c2cdbd704604f04eca3e2ba1927228dd39c
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sat Jan 7 14:16:34 2012 +0100
+
+    Updated tox config
+
+commit 3b7ef98059e88b25e1bb0d152a12a1927d6b1ecd
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sat Jan 7 14:15:39 2012 +0100
+
+    programoutput 0.6 with Python 3 support
+
+commit 71eaaa582f4abe0207abba67ab46f256e7f5d173
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sat Jan 7 13:32:04 2012 +0100
+
+    Fixed shell tests
+
+commit fd7878a686beac01dd15d51b9fca893ac15db21b
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sat Jan 7 13:26:47 2012 +0100
+
+    Fixed tox configuration
+
+commit 4d739929e16d1565ac710cb7f5e58dc4446ac866
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Mon Sep 19 21:09:44 2011 +0200
+
+    Release programoutput 0.5
+
+commit 23f4c16e4f077831575f28b882315359ff7400c5
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Mon Sep 19 21:09:20 2011 +0200
+
+    Update source distribution manifest to include tests and tox config
+
+commit da5c90b89a003437381e64aad08717afe171be85
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Mon Sep 19 21:00:10 2011 +0200
+
+    Handle EnvironmentErrors during command execution gracefully
+
+commit 3a3b510b84881c6ae275c128dca11eb7dd7b5e41
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sun Sep 18 23:36:11 2011 +0200
+
+    Removed makefile, use setup.py to build docs
+
+commit ea579892228d3bcbe4e61a3014fdc7c57052a3fc
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sun Sep 18 23:28:11 2011 +0200
+
+    Include return code in prompt by providing ``returncode`` key to prompt template
+
+commit 5c46ec5fd4de11b1c3c38cde4b72bbda562343a5
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sun Sep 18 23:19:10 2011 +0200
+
+    Fixed tests
+    
+    Shlex splitting is done late, after caching, fix tests to reflect this change
+
+commit a38aca3f57f255768c01af9cc1351b20f922b6ca
+Author: Jan-Marek Glogowski <jan-marek.glogowski@muenchen.de>
+Date:   Sun Sep 18 23:12:38 2011 +0200
+
+    Added :returncode: option to programoutput.
+    
+    Some programs use non-zero exit codes to signal other, non-error states.  To
+    avoid superfluous warnings in such cases, :returncode: is added to explicitly
+    specify the expected return code, instead of hard-coding 0.
+
+commit 47de4eb1540ced58fc47ded7386ce531ac990506
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sun Sep 18 22:32:28 2011 +0200
+
+    programoutput_prompt_template is a format string now
+
+commit e53aadde80b6df9f1f1b4a337f30cca949fd3694
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sun Sep 18 22:16:22 2011 +0200
+
+    Reworked, updated and improved documentation, Python 2.6 required now
+
+commit 82b300a4b782b06ca272d5cf0918cde6d1572236
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sun Sep 18 18:17:23 2011 +0200
+
+    Handle unexpected return codes more gracefully
+    
+    Instead of raises CalledProcessError, simply emit a Sphinx warning, if a
+    command returned a non-zero code.
+
+commit 787d9e2fbb23b9bd005aecf43d9162e6db887b88
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sun Sep 18 16:02:29 2011 +0200
+
+    Standard future imports
+
+commit 7cf0e3fb113bbee4d12f09882baaa2feaef05c5d
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sun Sep 18 16:01:31 2011 +0200
+
+    tip is programoutput 0.5 now
+
+commit 89c1351d04b5d364092b680b572ba710b61aca58
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sun Sep 18 15:58:23 2011 +0200
+
+    Reworked tests, test with real builds now
+
+commit 706c734b5b84efffbae9d64c1cc7b3b7c7dbd15a
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sun Sep 18 15:23:06 2011 +0200
+
+    Disable pylint no __init__() warning for cache class
+
+commit 79bf945561fc2969a442ea29d76eb9019d700230
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Fri Mar 11 21:22:56 2011 +0100
+
+    programoutput 0.4.1
+
+commit 18b2669fa6f69150ccff3a657608fcfa559f9352
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Fri Mar 11 21:21:47 2011 +0100
+
+    Extract docs version from sources, and updated copyright
+
+commit f3fea64d699850499a70aa0a6cd1747df1f1c64f
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Fri Mar 11 21:19:14 2011 +0100
+
+    Configured doc upload
+
+commit 7148606a6cc5e5313b483016fbede536ceb21eb0
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Fri Mar 11 21:18:34 2011 +0100
+
+    Skip ansi tests if ansi extension is missing
+
+commit 54288a2575406da595ea2fa400b7d70df6fa31a3
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Fri Mar 11 21:03:12 2011 +0100
+
+    Improved documention of configuration values
+
+commit 58f5c6f061259760b90c7fb0b7b8cfdb5e2a4147
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Fri Mar 11 20:54:23 2011 +0100
+
+    Missing license header
+
+commit b4df38c4f216128e476d0cf43183fe8f31e9ef91
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Fri Mar 11 20:54:11 2011 +0100
+
+    Update pytest imports
+
+commit c4c282b0b03be56e100ff97b905bc1d50b608e34
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Fri Mar 11 20:53:55 2011 +0100
+
+    Enforce versions of test dependencies
+
+commit 3ce55674b0fe2256aa616a7336e95fa160ae2bac
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Fri Mar 11 20:50:43 2011 +0100
+
+    Do not use a general python environment anymore
+
+commit 30ba58e45d3b296689df53ed1ee1d79e9614bc0e
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Fri Mar 11 20:48:46 2011 +0100
+
+    Fixed #10: Corrected installation instructions
+
+commit 70f6ee7bcd2649c2d13dd3f132b24aaf289d2b2b
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Fri Mar 11 20:46:40 2011 +0100
+
+    Bump to 0.4.1
+
+commit fd650a2248a1761924d87073493d82d2f3e2aead
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Fri Mar 11 20:45:46 2011 +0100
+
+    Removed unused imports
+
+commit 2fc170eb7a37f2cb00c8c7ef56caee3845f981af
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Fri Mar 11 20:54:29 2011 +0100
+
+    Read version number from source code
+
+commit 144788f41b8ffc907f154857b854ebebea9da4e2
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Wed Dec 1 21:54:02 2010 +0100
+
+    py.test is separate package now, update tox configurations accordingly
+
+commit 7bcfc07d9ef8e0d70277d8f3d61e69490df49882
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sun Aug 15 14:41:17 2010 +0200
+
+    Added tests for run_programs
+
+commit b915c24bea0c998e63f022d13734c60e7ce703cd
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sun Aug 15 14:40:54 2010 +0200
+
+    Add space only, if extra arguments were given
+
+commit dbfc2e1273efa4bd127e1459a9539d5a25241a7e
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Thu Aug 12 15:24:28 2010 +0200
+
+    Re-ordered functions to group tests and funcargs together
+
+commit c75eefb1c88261614a2f10a50dbabd006a3c71e0
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sun Aug 8 00:11:05 2010 +0200
+
+    Fixed exclude patterns setting in conf.py
+
+commit 03b24c8f996e339198a0e2c4d1c453ce97e69158
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Thu Jul 29 20:05:52 2010 +0200
+
+    Added tests for programoutput and use tox for running them
+
+commit fcd20dc45722f78bf68e16f8e51e0967429ff620
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Wed Jul 28 21:35:33 2010 +0200
+
+    Use a better fitting return value
+
+commit 26104aa6a9e6d2876ddfe14bc084fb182da4b359
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Wed Jul 28 21:29:01 2010 +0200
+
+    Improved error message
+
+commit 893638ec930127fc51c23f1ce5c1e184d8e66614
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Wed Jul 28 21:24:11 2010 +0200
+
+    Require sphinx 1.0
+
+commit 352c43651067ddba4e0f7e659cbd22600b55b08b
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Date:   Sun Jul 25 19:01:11 2010 +0200
+
+    Initial import of the programoutput extension

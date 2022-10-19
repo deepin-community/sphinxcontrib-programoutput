@@ -1,0 +1,9 @@
+Document: sphinxcontrib-programoutput-doc
+Title: sphinxcontrib-programoutput Documentation
+Author: Sebastian Wiesner <lunaryorn@googlemail.com>
+Abstract: Sphinx documentation for sphinxcontrib-programoutput
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-sphinxcontrib.programoutput-doc/html/index.html
+Files: /usr/share/doc/python-sphinxcontrib.programoutput-doc/html/*

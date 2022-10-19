@@ -1,0 +1,45 @@
+Source: sphinxcontrib-programoutput
+Section: python
+Priority: optional
+Maintainer: Debian OpenStack <team+openstack@tracker.debian.org>
+Uploaders:
+ Thomas Goirand <zigo@debian.org>,
+Build-Depends:
+ debhelper-compat (= 11),
+ dh-python,
+ openstack-pkg-tools (>= 99~),
+ python3-all,
+ python3-docutils,
+ python3-setuptools,
+ python3-sphinx,
+Build-Depends-Indep:
+ python3-pytest,
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/openstack-team/third-party/sphinxcontrib-programoutput
+Vcs-Git: https://salsa.debian.org/openstack-team/third-party/sphinxcontrib-programoutput.git
+Homepage: https://github.com/NextThought/sphinxcontrib-programoutput
+
+Package: python-sphinxcontrib.programoutput-doc
+Section: doc
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${sphinxdoc:Depends},
+Description: insert the output of arbitrary commands into documents - doc
+ sphinxcontrib-programoutput is a Sphinx extension to literally insert the
+ output of arbitrary commands into documents, helping you to keep your command
+ examples up to date.
+ .
+ This package provides the documentation.
+
+Package: python3-sphinxcontrib.programoutput
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: insert the output of arbitrary commands into documents - Python 3.x
+ sphinxcontrib-programoutput is a Sphinx extension to literally insert the
+ output of arbitrary commands into documents, helping you to keep your command
+ examples up to date.
+ .
+ This package provides the Python 3.x module.

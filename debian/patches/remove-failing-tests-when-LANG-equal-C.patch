@@ -1,0 +1,27 @@
+Description: Remove tests failing when LANG=C
+Author: Thomas Goirand <zigo@debian.org>
+Bug-Debian: https://bugs.debian.org/880909
+Forwarded: no
+Last-Update: 2017-11-09
+
+Index: sphinxcontrib-programoutput/src/sphinxcontrib/programoutput/tests/test_cache.py
+===================================================================
+--- sphinxcontrib-programoutput.orig/src/sphinxcontrib/programoutput/tests/test_cache.py
++++ sphinxcontrib-programoutput/src/sphinxcontrib/programoutput/tests/test_cache.py
+@@ -44,16 +44,6 @@ class TestCache(AppMixin,
+         self.assertEqual(cache[cmd], result)
+         self.assertEqual(cache, {cmd: result})
+ 
+-    def test_simple(self):
+-        cache = ProgramOutputCache()
+-        self.assert_cache(cache, Command([u'echo', u'blök']), u'blök')
+-
+-
+-    def test_shell(self):
+-        cache = ProgramOutputCache()
+-        self.assert_cache(cache, Command(u'echo blök', shell=True), u'blök')
+-
+-
+     def test_working_directory(self):
+         cache = ProgramOutputCache()
+         cwd = os.path.join(self.tmpdir, 'wd')

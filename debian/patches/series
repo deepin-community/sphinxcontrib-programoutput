@@ -1,0 +1,3 @@
+remove-failing-tests-when-LANG-equal-C.patch
+#fix-tests-for-sphinx-1.8.patch
+#use-py3-in-tests.patch
