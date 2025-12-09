@@ -1,3 +1,46 @@
+sphinxcontrib-programoutput (0.17-6) unstable; urgency=medium
+
+  * Removed -O--buildsystem=python_distutils from d/rules.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 20 Dec 2024 11:30:11 +0100
+
+sphinxcontrib-programoutput (0.17-5) unstable; urgency=medium
+
+  * Switch to pybuild (Closes: #1090697).
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 18 Dec 2024 14:40:35 +0100
+
+sphinxcontrib-programoutput (0.17-4) unstable; urgency=medium
+
+  * Use pytest instead of setup.py test (Closes: #1080237).
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 09 Sep 2024 16:43:34 +0200
+
+sphinxcontrib-programoutput (0.17-3) unstable; urgency=medium
+
+  * Cleans better (Closes: #1046287).
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 17 Aug 2023 18:26:11 +0200
+
+sphinxcontrib-programoutput (0.17-2) unstable; urgency=medium
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 24 Mar 2022 11:12:16 +0100
+
+sphinxcontrib-programoutput (0.17-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 18 Feb 2022 13:43:49 +0100
+
+sphinxcontrib-programoutput (0.16-2) unstable; urgency=medium
+
+  * Apply patch to make doc reproducible. Thanks to Simon McVittie for the
+    patch (Closes: #993681).
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 28 Dec 2021 18:21:12 +0100
+
 sphinxcontrib-programoutput (0.16-1) unstable; urgency=medium
 
   * New upstream release:

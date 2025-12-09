@@ -2,11 +2,24 @@
  Changes
 =========
 
+0.17 (2021-03-31)
+=================
+
+- Add support for Python 3.9.
+
+- Drop support for python 3.5.
+
+- Include program output and current working directory in the warning
+  logged when a program returns an unexpected return code. Suggested
+  by Sorin Sbarnea. See `issue 50
+  <https://github.com/NextThought/sphinxcontrib-programoutput/issues/50>`_.
+
+
 0.16 (2020-03-23)
 =================
 
 - Add ``name`` and ``caption`` options. Added in
-  `PR 41 <https://github.com/NextThought/sphinxcontrib-programoutput/pull/41>`_ 
+  `PR 41 <https://github.com/NextThought/sphinxcontrib-programoutput/pull/41>`_
   by Raphaël.
 - Add support for Python 3.8.
 

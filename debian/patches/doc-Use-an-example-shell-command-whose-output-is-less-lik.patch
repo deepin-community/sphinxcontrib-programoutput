@@ -1,0 +1,35 @@
+From: Simon McVittie <smcv@debian.org>
+Date: Sat, 4 Sep 2021 18:29:53 +0100
+Subject: doc: Use an example shell command whose output is less likely to
+ vary
+
+The path returned by $(which grep) might change depending on whether
+the system is merged-/usr or whether it has a local /usr/local/bin/grep,
+and the result of running ls can depend on factors such as the time zone.
+
+Using a different command here also helps to illustrate that shell
+syntax such as "&&" is accepted here, and using "command -v" avoids
+deprecation warnings from debianutils which(1).
+
+Signed-off-by: Simon McVittie <smcv@debian.org>
+---
+ doc/index.rst | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/doc/index.rst b/doc/index.rst
+index 6b5a0cc..8175499 100644
+--- a/doc/index.rst
++++ b/doc/index.rst
+@@ -129,10 +129,10 @@ command is literally passed to the system shell::
+ 
+ Other shell features like process expansion consequently work, too::
+ 
+-   .. command-output:: ls -l $(which grep)
++   .. command-output:: test -x $(command -v grep) && echo yes
+       :shell:
+ 
+-.. command-output:: ls -l $(which grep)
++.. command-output:: test -x $(command -v grep) && echo yes
+    :shell:
+ 
+ Remember to use ``shell`` carefully to avoid unintented interpretation of shell

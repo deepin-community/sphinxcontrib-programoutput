@@ -1,3 +1,6 @@
 remove-failing-tests-when-LANG-equal-C.patch
+doc-Use-python3-instead-of-python-in-examples.patch
+doc-Use-an-example-shell-command-whose-output-is-less-lik.patch
+doc-Use-an-environment-variable-less-likely-to-vary-betwe.patch
 #fix-tests-for-sphinx-1.8.patch
 #use-py3-in-tests.patch
