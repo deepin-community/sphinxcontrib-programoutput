@@ -1,0 +1,38 @@
+From: Simon McVittie <smcv@debian.org>
+Date: Sat, 4 Sep 2021 18:33:37 +0100
+Subject: doc: Use an environment variable less likely to vary between builds
+
+SHELL is less user-specific than USER, and can easily be forced to a
+known value for reproducible builds.
+
+Signed-off-by: Simon McVittie <smcv@debian.org>
+---
+ doc/index.rst | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/doc/index.rst b/doc/index.rst
+index 8175499..7bffe9c 100644
+--- a/doc/index.rst
++++ b/doc/index.rst
+@@ -114,17 +114,17 @@ Normally the command is splitted according to the POSIX shell syntax (see
+ :py:mod:`shlex`), and executed directly.  Thus special shell features like
+ expansion of environment variables will not work::
+ 
+-   .. command-output:: echo "$USER"
++   .. command-output:: echo "$SHELL"
+ 
+-.. command-output:: echo "$USER"
++.. command-output:: echo "$SHELL"
+ 
+ To enable these features, enable the ``shell`` option.  With this option, the
+ command is literally passed to the system shell::
+ 
+-   .. command-output:: echo "$USER"
++   .. command-output:: echo "$SHELL"
+       :shell:
+ 
+-.. command-output:: echo "$USER"
++.. command-output:: echo "$SHELL"
+    :shell:
+ 
+ Other shell features like process expansion consequently work, too::

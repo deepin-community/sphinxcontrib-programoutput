@@ -1,0 +1,107 @@
+From: Simon McVittie <smcv@debian.org>
+Date: Sat, 4 Sep 2021 18:21:58 +0100
+Subject: doc: Use python3 instead of python in examples
+
+This makes the examples more illustrative, by running a command that
+actually exists. It also avoids embedding the full path to the build
+directory in the generated documentation, which is bad for reproducible
+builds.
+
+Signed-off-by: Simon McVittie <smcv@debian.org>
+---
+ doc/index.rst | 26 +++++++++++++-------------
+ 1 file changed, 13 insertions(+), 13 deletions(-)
+
+diff --git a/doc/index.rst b/doc/index.rst
+index 8710bbe..6b5a0cc 100644
+--- a/doc/index.rst
++++ b/doc/index.rst
+@@ -35,13 +35,13 @@ Usage
+ To include the output of a command into your document, use the
+ :dir:`program-output` directive provided by this extension::
+ 
+-   .. program-output:: python -V
++   .. program-output:: python3 -V
+ 
+-The whole output of ``python -V``, including any messages on standard error, is
++The whole output of ``python3 -V``, including any messages on standard error, is
+ inserted into the current document, formatted as literal text without any
+ syntax highlighting:
+ 
+-.. program-output:: python -V
++.. program-output:: python3 -V
+ 
+ You can omit the content of the standard error stream with the ``nostderr``
+ option.
+@@ -61,12 +61,12 @@ single ellipsis ``...`` is inserted.
+ 
+ If used with a single number, all lines after the specified line are omitted::
+ 
+-   .. program-output:: python --help
++   .. program-output:: python3 --help
+       :ellipsis: 2
+ 
+ The above omits all lines after the second one:
+ 
+-.. program-output:: python --help
++.. program-output:: python3 --help
+    :ellipsis: 2
+ 
+ Negative numbers count from the last line backwards, thus replacing ``2`` with
+@@ -76,12 +76,12 @@ If used with two comma-separated line numbers, all lines in between the
+ specified lines are omitted.  Again, a negative number counts from the last
+ line backwards::
+ 
+-   .. program-output:: python --help
++   .. program-output:: python3 --help
+       :ellipsis: 2,-2
+ 
+ The above omits all lines except the first two and the last two lines:
+ 
+-.. program-output:: python --help
++.. program-output:: python3 --help
+    :ellipsis: 2,-2
+ 
+ 
+@@ -91,19 +91,19 @@ Mimicing shell input
+ You can mimic shell input with the :dir:`command-output` directive [#alias]_.
+ This directive inserts the command along with its output into the document::
+ 
+-   .. command-output:: python -V
++   .. command-output:: python3 -V
+ 
+-.. command-output:: python -V
++.. command-output:: python3 -V
+ 
+ The appearance of this output can be configured with
+ :confval:`programoutput_prompt_template`.  When used in conjunction with
+ ``ellipsis``, the command itself and any additional text is *never* omitted.
+ ``ellipsis`` always refers to the *immediate output* of the command::
+ 
+-   .. command-output:: python --help
++   .. command-output:: python3 --help
+       :ellipsis: 2
+ 
+-.. command-output:: python --help
++.. command-output:: python3 --help
+    :ellipsis: 2
+ 
+ 
+@@ -150,7 +150,7 @@ indicate an error.  In some cases however, it may be reasonable to demonstrate
+ failed programs.  To avoid a (superfluous) warning in such a case, you can
+ specify the expected return code of a command with the ``returncode`` option::
+ 
+-   .. command-output:: python -c 'import sys; sys.exit(1)'
++   .. command-output:: python3 -c 'import sys; sys.exit(1)'
+       :returncode: 1
+ 
+ The above command returns the exit code 1 (as given to :py:func:`sys.exit()`),
+@@ -235,7 +235,7 @@ This extension understands the following configuration options:
+    :dir:`command-output`.  Defaults to ``$ {command}\n{output}`` which renders
+    as follows:
+ 
+-   .. command-output:: python -V
++   .. command-output:: python3 -V
+ 
+    The following keys are provided to the format string:
+ 
